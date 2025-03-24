@@ -1,7 +1,7 @@
 # Movie Review Website: Screen Spotlight  
 
 ## **Overview**  
-This repository contains a **movie review website** built with **HTML, CSS, and JavaScript**. The site showcases a curated selection of top-rated films, upcoming releases, and a team of dedicated film critics.  
+This repository contains a **movie review website** built with **HTML, CSS, and JavaScript**. The site showcases a curated selection of top-rated films, upcoming releases, and a team of dedicated film critics. This project was developed in my Front End Development 1 course as our first project exploring using JavaScript and interactive HTML pages.
 
 **Key Features:**  
 - **Curated Movie Reviews** – Detailed reviews of top-rated films.  
@@ -31,3 +31,9 @@ Screen-Spotlight/
 │   ├── background-music.mp3 # Background music (commented out)
 │   ├── cooking-video.mp4    # Video content (commented out)
 │── README.md                # Project documentation
+```
+## **Contributors**  
+- Caroline Varner
+- Course: TCID 3400
+- Instructor: Ryan Webber
+- University: Kennesaw State University
