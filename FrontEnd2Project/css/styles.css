@@ -1,0 +1,294 @@
+body {
+    font-family: 'Albert Sans';
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Albert Sans';
+    text-align: left;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Albert Sans';
+}
+
+h3 {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Albert Sans'; font-size: 23px;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
+header h2 {
+    color: #7f7f7f;
+    text-align: center;
+    font-family: 'Albert Sans';font-size: 18px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+p {
+    color: #7f7f7f;
+    text-align: left;
+    font-family: 'Albert Sans';font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-inline: 20px;
+    font-family: 'Albert Sans';font-size: 18px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    color: #ffffff;
+    padding: 20px;
+}
+
+section {
+    background: #000000;
+    color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+nav ul li a {
+    color: fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    animation: slideIn 1s ease-out;
+    font-family: 'Albert Sans';font-size: 60px;
+    padding-top: 100px;
+}
+    
+nav ul li a:hover {
+    color: #525151;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+    section {
+        animation: fadeIn 1s ease-in;
+    }
+
+@keyframes grow {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+video {
+    animation: grow 1.5s ease-in-out;
+}
+
+.color-transition {
+    transition: color 0.3s ease-in-out;
+}
+
+.color-transition:hover {
+    color: ff6347;
+}
+
+.bg-transition {
+    transition: background-color 0.3s ease-in-out;
+}
+    
+.bg-transition:hover {
+    background-color: #000000;
+}
+
+.size-transition {
+    transition: height 0.5s ease, width 0.5s ease;
+}
+
+.size-transition:hover {
+    height: 200px;
+    width: 200px;
+}
+    
+.opacity-transition {
+    transition: opacity 0.3s ease-in-out;
+}
+        
+.opacity-transition:hover {
+    opacity: 0.5;
+}
+
+.transform-transition {
+    transition: transform 0.5s ease-in-out;
+}
+
+.transform-transition:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+        
+.border-transition {
+    transition: border 0.3s ease-in-out;
+}
+        
+.border-transition:hover {
+    border: 2px solid ff6347;
+}
+
+.shadow-transition {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-transition:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.spacing-transition {
+    transition: padding 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+.spacing-transition:hover {
+    padding: 20px;
+    margin: 20px;
+}
+
+.bg-image-transition {
+    transition: background-image 0.5s ease-in-out;
+}
+    
+.bg-image-transition:hover {
+    background-image: url('new-image.jpg');
+}
+
+.all-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.all-transition:hover {
+    background-color: ff6347;
+    color: fff;
+    transform: scale(1.1);
+}
+
+iframe {
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+        
+.checked {
+    color: #7f7f7f;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero_image.avif");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.poster {
+    width: 450px;
+    height: 600px;
+    object-fit: cover; /* Ensures the aspect ratio is maintained within the specified dimensions */
+    border-radius: 0; /* Ensures posters remain square */
+}
+
+/* Styling for team member profile pictures */
+.profile {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Ensures the image scales correctly */
+    border-radius: 50%; /* Makes the images circular */
+}
+
+h4 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Albert Sans';font-size: 23px;
+}
+
+.video-text-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add space between the video and the text */
+    padding: 20px;
+}
+
+.text-content {
+    max-width: 800px; /* Optional: Control the width of the text */
+}
+
+iframe {
+    flex-shrink: 0; /* Ensure the video doesn't shrink */
+}
